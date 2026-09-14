@@ -1,0 +1,53 @@
+﻿# Python-generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Local training data
+images/
+yolo_dataset/
+
+# Generated YOLO training and prediction results
+runs/
+cpx_recognizer/runs/
+output/
+turntable/capture/
+
+# Large COLMAP and reconstruction files
+*.db
+*.ply
+*.mvs
+*.dmap
+*.bin
+
+# Old custom models
+cpx_recognizer/models/cpx_model_v1.pt
+cpx_recognizer/models/cpx_model_v2.pt
+cpx_recognizer/models/cpx_model_v3.pt
+cpx_recognizer/models/cpx_model_v4.pt
+cpx_recognizer/models/cpx_model_v5.pt
+cpx_recognizer/models/cpx_model_v6.pt
+
+# Temporary inspection files
+project-files.csv
+project-structure.txt
+
+# Operating-system and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
