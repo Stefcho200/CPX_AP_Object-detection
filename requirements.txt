@@ -1,0 +1,7 @@
+# PyTorch is installed separately (GPU build for the GeForce MX350):
+#   .venv\Scripts\python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+ultralytics
+opencv-python
+pillow
+numpy
+easyocr   # only needed for "twin" products (OCR); app works without it

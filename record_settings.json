@@ -1165,5 +1165,30 @@
     "canny_high": 150,
     "canny_dilate": 2,
     "use_ai_mode": true
+  },
+  "Neshto": {
+    "threshold": 127,
+    "blur": 5,
+    "blur_sigma": 0,
+    "invert": false,
+    "margin": 20,
+    "morph": 3,
+    "morph_op": "open",
+    "morph_shape": "rect",
+    "morph_iter": 1,
+    "min_area": 500,
+    "max_area": 200000,
+    "roi_margin": 0,
+    "solidity": 0,
+    "ai_conf": 50,
+    "exclude_colors": [],
+    "include_colors": [],
+    "color_mode": "exclude",
+    "exclude_tolerance": 25,
+    "canny_enabled": false,
+    "canny_low": 50,
+    "canny_high": 150,
+    "canny_dilate": 2,
+    "use_ai_mode": true
   }
 }

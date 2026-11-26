@@ -6,13 +6,14 @@ from gui.top_bar import TopBar
 from core.i18n import t
 import theme
 from core import settings_manager
+from core.project_config import app_title
 settings_manager.apply_saved_settings()
 
 
 class MainMenu(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Festo CPX Recognizer")
+        self.title(app_title())
         self.geometry("480x420")
         theme.style_window(self)
 
@@ -21,7 +22,7 @@ class MainMenu(tk.Tk):
         TopBar(self, on_language_changed=self._on_language_changed,
                on_theme_changed=self._on_theme_changed).pack(fill="x")
 
-        self.title_label = tk.Label(self, text=t("app_title"), bg=theme.BG_DARK,
+        self.title_label = tk.Label(self, text=app_title(), bg=theme.BG_DARK,
                                      fg=theme.CREAM, font=theme.FONT_TITLE)
         self.title_label.pack(pady=30)
 
@@ -39,7 +40,7 @@ class MainMenu(tk.Tk):
 
     def _on_language_changed(self, lang_code):
         print(f"[main_menu] language changed to: {lang_code}")  # temp debug line
-        self.title_label.configure(text=t("app_title"))
+        self.title_label.configure(text=app_title())
         self.detect_btn.configure(text=t("menu_detect"))
         self.train_btn.configure(text=t("menu_training"))
         self.settings_btn.configure(text=t("menu_settings"))

@@ -1,10 +1,7 @@
 {
   "camera_source": {
     "type": "index",
-    "value": 1
+    "value": null
   },
-  "known_ip_cameras": [
-    "10.32.42.36"
-  ],
-  "camera_index": 1
+  "known_ip_cameras": []
 }

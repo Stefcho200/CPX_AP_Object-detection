@@ -1,0 +1,20 @@
+{
+  "app_title": "CPX Product Recognizer",
+
+  "training": {
+    "epochs": 100,
+    "patience": 20,
+    "imgsz": 640,
+    "batch": 8,
+    "warm_start": true
+  },
+
+  "twin_groups": [
+    ["CPX-AP-I-8DO-M8-3P", "CPX-AP-I-4DI4DO-M8-3P", "CPX-AP-I-8DI-M8-3P", "CPX-AP-I-8DI-M8-3P-A"],
+    ["CPX-AP-I-8DO-M12-5P", "CPX-AP-I-8DI-M12-5P", "CPX-AP-I-4DI4DO-M12-5P", "CPX-AP-I-4IOL-M12"],
+    ["CPX-AP-I-16NDI-M8-3P", "CPX-AP-I-16DI-M8-3P"],
+    ["CPX-AP-I-16DI-M12-5P", "CPX-AP-I-16DIO-M12-5P"],
+    ["CPX-AP-I-EC-M12", "CPX-AP-I-EP-M12", "CPX-AP-I-CCB-M12"],
+    ["CPX-AP-I-4AI-U-I-RTD-M12", "CPX-AP-I-4AI4AO-U-I-M12"]
+  ]
+}

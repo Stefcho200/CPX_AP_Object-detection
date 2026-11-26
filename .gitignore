@@ -17,9 +17,17 @@ env/
 *.pfx
 *.p12
 
-# Local training data
+# Local training data (recordings stay on this PC)
 images/
 yolo_dataset/
+data/
+manual_capture_temp/
+relabel_staging/
+
+# Large / auto-downloaded weights (SAM downloads itself on first use)
+models/mobile_sam.pt
+models/sam_b.pt
+mobile_sam.pt
 
 # Generated YOLO training and prediction results
 runs/
